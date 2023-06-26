@@ -8,9 +8,14 @@
         {% endblock %}
 
         {% block javascripts %}
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/cerulean/bootstrap.min.css" rel="stylesheet">
+               <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/cerulean/_variables.scss" rel="stylesheet">
         {% endblock %}
     </head>
     <body>
+        {% block header %}
+           {% include "_partials/_header.html.twig" %}
+        {% endblock %}
         {% block body %}{% endblock %}
     </body>
 </html>
